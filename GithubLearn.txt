@@ -1,0 +1,164 @@
+Day 1: Github Learning 
+- Download Git and signup to Github 
+
+Notes:
+
+
+Github and Learnings 
+
+Version Control: management of Changes made to documents, computer programs, large web sites and other collection of info
+Changes: Versions
+What Version Control: Collaboration, Merge the works done by all different users. 
+Git Repository:
+Back up: Central server has all the files and these are also saved inside the local machine as a local copy. 
+VC: - Analyze the project, what changed, when and how many details were changed, evolved versions are monitored.
+
+Version Control Tools:
+Git
+Apache, SVN
+CVS
+Mercurial
+
+
+INTRODUCTION:
+Git: Version Control Tool helps push and pull the data
+
+Github: Code Hosting Platform for Version Control Collaboration
+Allows user to host users central repository in a remote server
+Social Network for developers (Share the code to see the projects)
+
+Repository: Data Space, save data in a particular place, connected via HTTP
+
+##BASIC COMMANDS: 
+- Function
+- Use
+
+$ git init
+// Initialize Local Git Repository
+Go into folder via Terminal and type
+
+$ git add <file>
+// Add Files to Index
+To commit files
+
+$ git status
+//Check Status of Working Tree
+Puts in a staging area
+
+$ git commit
+//Commit Changes In Index
+Puts in a local repository
+
+$ git push -u origin <branch name>
+// Push it to Remote repository
+Uploads on the github profile
+
+$ git pull
+// Pull Latest from Remote Repo
+Downloads the file changes from remote repo
+
+$ git clone 
+// Clone Repository into a new directory
+Downloads the copy remote repo/ file 
+
+$ git config –global user.name ‘Mandira Ghimire’
+//Connects to github account
+
+
+$ git config - -global user.email ‘‘mandirag469@gmail.com’
+//Connects to github account and remote repository 
+
+
+$ git rm --cached File name
+$ git rm - -cached index.html
+//
+
+
+$ git add*.html
+
+$ git commit -m ‘message of the commit’’
+// to commit modified files
+
+
+$ git checkout ‘branch name’ 
+// to switch the branch 
+
+
+Clear 
+// to clear the screen and start again
+
+
+$ git merge file name 
+//Merge files
+
+
+$ git add README.md 
+//to make it public and read
+.md for clear understanding 
+
+
+$ git clone paste the link 
+// to make a copy on your local repository 
+
+Press q key to come out of git log 
+Press :wq to get out of insert
+
+
+For windows: Git.fcm.com or Git bash :Command line tool 
+
+
+##COMMAND 
+
+Function
+Create a file name and click right to start git bash to work on the project and create files inside the folder:
+
+Example- 
+Touch index.html
+Touch app.js
+
+
+
+
+$ git add*.html
+Add all the html files 
+$ git add . 
+
+(takes to different tab, press escape in the front of initial commit 
+All all the sub files from folder
+:wq to come back from the committed fies 
+Commit all the files on folder
+$ git status (to check the staging or track the change in the files before committing)
+
+
+$ git commit -m ‘changed file name’
+$git commit -m ‘changed app.js’
+
+##IGNORING FILES: 
+- For sensitive info and passwords or personal files 
+- For files like .DS_STORE (where Mac keeps to track files within the folder, so do not share)
+
+$touch .gitignore 
+// to ignore the files in given folder or repository
+*** lIST of entry to ignore:
+- .DS_Store
+- .vscode/
+- authentication.js
+- node_modules
+- notes/
+- **/*-todo.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
