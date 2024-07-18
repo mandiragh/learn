@@ -1,0 +1,301 @@
+Sql : structured query language 
+SQL and MYSQL Workbench Code Practices:
+
+Coding and Colour coding Tips
+Intentation: /*...*/
+Loading the employee database (data manipulation)
+
+SQL and Practical Application of the SQL SELECT statistics:
+SELECT FROM:
+Theory of relational database 
+.SQL theory
+Creating SQL database and tables 
+Creating SQL constraints
+
+SQL Database and Table:
+CREATE DATABASE IF NOT EXISTS Sales;
+DROP DATABASE IF EXISTS Sales;
+CREATE DATABASE IF NOT EXISTS Sales;
+DROP SCHEMA IF EXISTS Sales;
+CREATE SCHEMA IF NOT EXISTS Sales;
+USE Sales;
+DROP TABLE IF EXISTS test_table; 
+CREATE TABLE test_table ( test_field DECIMAL(5,3) );
+
+
+USING SELECT feature:
+</> select column_1,column_2 from table_name;
+</> select * from table_name;
+</> select * from table_name where condition_1 = “Name”;
+</>  select column_1,column_2 from table_name where condition_1 AND condition_2;
+</>  select column_1,column_2 from table_name where condition_1 OR condition_2;
+</>  select column_1,column_2 from table_name where condition_1 AND ( condition_2 OR condition_3);
+</>  select column_1,column_2 from table_name; where condition_1 IN/ NOT IN  (‘Name_1’,‘Name_2’,‘Name_3’);
+</> select * from table_name where condition_1 like/not like (“Name%”); note: to get data with subject included 
+</>  select * from table_name where condition_1 like/not like (“%Name”); note: to get data with subject included 
+</>  select * from table_name where condition_1 like/not like (“%Name%”); note: to get data that is particular to name or subject
+</>  select * from table_name where condition_1 like/not like (“Name_”); note: to get data that starts with initial of name
+</> select * from table_name where condition_1 between/not between “ condition_1” and “ condition_2”; note: to get the data between the definite period or not. 
+</> select * from table_name where condition_1 is not null/ is null;
+</> select * from table_name where condition_1 <>/ !=  “Mark”;
+
+
+
+NOTE: =equal operator
+Linking words and symbols called operators used with where clause
+AND
+OR
+IN - NOT IN
+LIKE - NOT LIKE
+BETWEEN… AND... 
+Exist - NOT EXISTS
+IS NULL - IS NOT NULL
+Comparison operators
+Etc.
+
+
+
+
+NOTE: wildcard characters
+%,  _ ,  *  : we use these characters to put anything on its place e.g. to get result by guessing it might result in anticipated data
+
+
+
+Other comparison operators 
+SQL
+= equal to
+> greater than
+>= greater than or equal to
+< less than
+<= less than or equal to 
+<>, != not equal, different from 
+
+
+USING SELECT DISTINCT
+</> select distinct column_1, column_2 from table_name; 
+
+
+Introduction to aggregate functions:
+Applied on multiple rows of a single column of a table and return an output of a single value 
+
+Count () : counts the number of non-null records in a field. Used with distinct 
+Sum (): sums all the non-null values in a column
+MIN (): returns the minimum value from the entire list
+MAX (): returns the maximum value from the entire list
+AVG (): calculates the average of all non-null values belonging to a certain column of table
+
+ 
+</> select count(column_name) from table_name; note: no space after count
+</> select count(*) from table_name;
+</> select count(distinct column_name) from table_name; note: no space after count
+
+USING ORDER BY:
+</> select * from employees order by condition_1 ASC;
+</> select * from employees order by condition_1 DESC;
+
+
+USING GROUP BY: Powerful in SQL
+When working in SQL, results can be grouped according to a specific field or fields 
+If we need aggregate function we must add a Group By clause in our query
+Should be used immediately after the where, if any and before order by clause.
+
+</> select column_name from table_name where condition_1 group by column_name order by column_name;
+</>  select column_name, count(column_name) from table_name group by column_name;
+</> select column_name, count(column_name) from table_name group by column_name order by column_name DESC;
+
+USING Aliases (AS):
+It is used to rename a selection from your query. (alias name- AS)
+
+</>  select column_name, count(column_name) AS different_name from table_name where condition_1 group by column_name order by column_name DESC;
+
+USING HAVING:
+ Refines the output from records that do not satisfy a certain condition
+Implemented with GROUP BY
+It is almost like where but applied to the group by block 
+Applied in aggregate function like COUNT(), 
+
+</>  select column_name, from table_name where condition_1 group by column_name 
+having  condition_X order by column_name DESC;
+</>   select column_name, count(column_name) AS different_name from table_name group by column_name having COUNT(column_name) > number order by column_name DESC;
+
+
+For example: Extract all first names that appear more than 250 times in the employees table.
+</> select first_name, count(first_name) as names_count from employees group by first_name having count(first_name) > 250 order by first_name;
+
+For example: Select all employees whose average salary is higher than 120,000 per annum.
+</> select emp_no, avg (salary) from salaries group by emp_no having avg (salary) > 120000 order by emp_no;
+
+
+
+USING WHERE OR HAVING: 
+
+
+WHERE:
+ it allows us to set conditions that refer to subsets of individual rows
+Applied before reorganizing the output into the groups
+Used in non-aggregate 
+HAVING:
+Output are filtered or improved by using it. 
+Used in aggregate
+
+
+
+For example: Extract a list of all names that are encountered less than 200 times, the data of people hired after the 1st of january 1999. 
+</> select first_name, count(first_name) as names_count from employees where hire_date > ‘ 1999-01-01’ group by first_name having count( first_name) < 200 order by first_name DESC;
+
+For Example: Select the employee numbers of all individuals who have signed more than 1 contract after the 1st of January 2000.
+</> select emp_no from dept_emp table where from_date < ‘2000-01-01’ group by emp_no having count(from_date) > 1 order by emp_no;
+
+
+USING LIMIT:
+Used to limit the result to a limited number.
+
+</> SELECT column_name FROM table_name WHERE conditions GROUP BY column_name HAVING conditions ORDER BY column_name LIMIT number;
+
+For example: Show the employee numbers of the 10 highest paid employees in the database.
+</> select * from salaries order by salary DESC;
+
+Date: 06/13/2021
+`
+# EXPANDING on MYSQL aggregate functions:
+
+
+Count () : counts the number of non-null records in a field. Used with distinct , used in numeric and non numeric data
+Numeric data only:
+Sum (): sums all the non-null values in a column
+MIN (): returns the minimum value from the entire list
+MAX (): returns the maximum value from the entire list
+AVG (): calculates the average of all non-null values belonging to a certain column of table
+
+
+ Date: 07/01/2021
+
+Summarized figures and specific datas. 
+Example: How many departments are there in the “employees” database? Use the ‘dept_emp’ table to answer the question.
+Select count(distinct dept_no) from dept_emp
+
+Applying Numerical Aggregate :
+Select Sum(table) from table_name;
+Select min(table) from table_name;
+Select max(table) from table_name;
+Select avg(table) from table_name;
+Select round(avg(tabel),2) from table_name;
+
+Section 23: SQL JOINS
+SQL JOINS: the sql tool that allow us to construct a relationship between objects 
+		: shows a result set, containing fields deprived from two or more tables
+		: find a related column from the two tables that contains the same type of data
+		 add columns from these two tables to our output
+	
+Relational schemas: Information retrieval from different sets of tables, tool that helps find a strategy for linking tables.
+
+LINKING COLUMN= MATCHING COLUMN
+
+Create Duplicates:
+</> DROP TABLE IF EXIST table_1;
+CREATE TABLE table_1(.....)
+INSERT INTO table_1
+
+INNER JOIN: Find result set, and match records of two or more tables [ /*......*/] 
+</> Select table_1.column_name(s), table__2.column_name(s) 
+From table_1 
+Join table_2 on table_1.column_name = table_2.column_name;
+
+Example:
+Extract a list containing information about all managers’ employee number, first and last name, department number, and hire date. 
+</> Select e.emp_no, e.first_name,e.last_name,dm.dept_no,e.hire_date FROM employees.e JOIN dept_manager dm ON e.emp_no= dm.emp_no;
+
+Duplicate Records: These are not always allowed in a database or data table
+Sometimes encountered in new, raw or uncontrolled data.
+GROUP BY the field that differs most among records
+
+LEFT JOIN: 
+Output shows all values from the left table that match no values from the right table.
+Order of tables and result matters while coding.
+# remove the duplicates from the two tables
+# add back back the initial records
+# LEFT JOIN 
+Example: Join the 'employees' and the 'dept_manager' tables to return a subset of all the employees whose last name is Markovitch. See if the output contains a manager with that name.  
+</> Select e.emp_no, e.first_name,e.last_name,dm.dept_no,dm.from_date FROM employees.e
+LEFT JOIN dept_manager dm ON e.emp_no =dm.emp.no
+WHERE e.last_name =’Markovitch’ ORDER BY dm.dept_no DESC, e.emp.no;
+
+RIGHT JOIN: / RIGHT OUTER JOIN 
+Output shows all values from the right table that match no values from the left table
+The direction of the operation is inverted
+When applying a Right Join, all the records from the right table will be included in the result set
+Values from the left table will be included only if their linking column contains a value coinciding, ormatching, with a value from the linking column of the right table. 
+LEFT and RIGHT joins are perfect examples of one-to-many relationships.
+
+
+
+
+
+
+Date: 07/03/2021
+
+New and the Old Join Syntax:
+Subqueries, Self-Joins
+Stored Routines
+Advanced SQL Tools
+
+Overlapping Section in venn-diagram: connection points
+Using where instead of join:
+</> Select t1.column, t1.column_name,
+From table_1 t1, 
+Where t1.column_name=t2.column_name
+Join or where?
+The retrieved output is identical but where is more time consuming & old
+Join is intuitive for readers 
+
+Example: Extract a list containing information about all managers’ employee number, first and last name, department number, and hire date. Use the old type of join syntax to obtain the result.
+
+</>  Select e.emp_no, e.first_name,e.last_name,dm.dept_no,e.hire_date FROM employees.e, dept_manager dm WHERE e.emp_no=dm.emp_no
+</> Select e.emp_no, e.first_name,e.last_name,dm.dept_no,e.hire_date FROM employees.e, JOIN dept_manager dm ON e.emp_no=dm.emp_no
+
+Join and where together
+Join: used for connecting the ‘employees’ and ‘salaries’ tables
+Where: used to define conditions that will be the connecting points between the tables. 
+Example: Select the first and last name, the hire date, and the job title of all employees whose first name is “Margareta” and have the last name “Markovitch”.
+</> SELECT  e.first_name, e.last_name, e.hire_date,t.title FROM employees.e JOIN titles t ON e.emp_no=t.emp_no WHERE first_name=’Margareta’ AND last_name = ‘Markovitch ORDER BY e.emp_no; 
+
+CROSS JOIN: 
+It will take the values from a certain table and connect them with all the values from the tables we want to join with 
+Connects all the values, not just those that match
+The Cartesian product of the values of two or more sets
+Particularly useful when the tables in a database are not well connected
+
+</> Select dm.*, d.*  From dept_manager dm Cross Join departments d Order By dm.emp_no,d.dept_no;
+
+Example: Use a CROSS JOIN to return a list with all possible combinations between managers from the dept_manager table and department number 9.
+</> Select dm.*, d.*  From departments d  Cross Join dept_manager dm Where d.dept_no =’d009’ Order By d.dept_name;
+
+Aggregate functions with Join:
+Join more than two tables:
+Example: Select all managers’ first and last name, hire date, job title, start date, and department name.
+</> Select e.first_name,e.last_name,
+e.hire_date, t.title,
+m.start_date,d.dept_name 
+From employees.e
+ JOIN dept_manager m ON e.emp_no=m.emp_no
+JOIN departments d ON m.dept_no=d.dept_no
+JOIN titles t ON e.emp_no =t.emp_no 
+WHERE t.title=’Manager’ ORDER BY e.emp_no; 
+
+
+TIPS and TRICKS for JOINS:
+Find key columns, which are common between the tables involved in the analysis and are necessary to solve the task at hand
+Doesn’t have to be foreign or private keys.
+Example: How many male and how many female managers do we have in the ‘employees’ database?
+</> Select e.gender, COUNT(dm.emp_no)
+From employees.e JOIN dept_manager dm ON e.emp_no=dm.emp_no 
+GROUP BY gender;
+ 
+Difference Between UNION and UNION ALL:
+What do you think is the meaning of the minus sign before subset A in the last row (ORDER BY -a.emp_no DESC)?
+</> Select * From (Select e.emp_no, e.first_name,e.last_name, NULL AS dept_no, NULL AS from_date From employees.e Where Last_name= ‘Denis’ UNION SELECT 
+NULL AS emp_no, NULL AS first_name, NULL AS last_name, dm.dept_no, dm.from_date FROM dept_manager dm) as a ORDER BY -a.emp_no DESC;
+
+
+
+

@@ -1,0 +1,2020 @@
+21/03/2023: Date
+
+Red Hat Training and Linux: 
+
+Fundamentals of Linux: 
+
+Intro and Explanation to Linux
+Linux: 
+-Open SOurce Operating System
+-Based on Unix 
+-Runs on variety of Hardware with Heavy Operating Demands
+-Open Source/ Free
+- Secure, no antivirus systems
+-power networking capability
+Freedom to use source code and  to create, modify and distribute the code
+ Highly used in Cloud Industry
+Used in Cyber Security Industry
+Distributors: 
+Redhat Linux
+Ubuntu
+Centos
+
+
+Linux Admin Tasks 
+-Installation 
+-Establishing network connectivity
+-Managing physical storage 
+-Basic Security Administration 
+
+
+
+
+7 Level of Running Linux: Terms and Explanations
+
+Boot Loader: First page on screen when starting a computer
+Kernel: Core of CPU, memory and running the shell commands and getting things done. 
+INIT System: Initial System and background processor (manages all the DAEMONs
+DAEMON: Background services that starts during boots
+Graphical Server: Shows the graphics on desktop
+Desktop Environment: Interacting with the built in applications 
+Application: Download softwares
+
+
+Kernel: Software that interfaces with the computer hardware
+Shell: command-line interpreter program that phrases and sends commands to operating system
+Programs: Run the code or programs in Linux for output
+SSHD: Can manage all the connections of SSH remote connection
+HTTPD: manages the apache servers
+
+
+
+
+RH124 Red Hat System Admin I : 
+RH134 Red Hat System Admin II: 
+
+
+
+
+Symbols Used in Linux:
+[ ] Square Barackets 
+Surround Optional Items
+… Dots
+List of Items of that type 
+| 
+Only one of them can be specified
+<> Text in angle brackets
+Variable data
+
+
+
+
+Terms/Commands  Used In Linux: 
+
+If the system is communicating or not
+ifconfig
+Check name of the app/platform
+Uname , uname -r (where r means recursive details) , uname -a (where a means all details)
+Find previous commands in linux
+history
+Going back to the previous directory
+Cd ..
+Going in root directory 
+Cd /
+List the directory
+ls
+Going to certain directory
+Cd and name of directory: cd var
+Handling the directories in linux
+/# is for user directories (First one that opens in the computer)
+~# is for root directories 
+
+
+To create a file
+To open file
+To delete or remove file 
+Touch test
+Touch file name : touch test.txt
+Rm test.txt
+To create a file directory
+mkdir
+To exist the Window and user
+Ctrl + d
+To Close Message Tray
+Super + m or Esc
+Extra Notes: 
+
+
+System used by every individual use seperate IPv4 subnets
+Dash is called Dock
+
+
+
+
+
+
+Accessing the Command Line:
+Use the Bash Shell to Execute Commands 
+
+Location
+Purpose
+/usr
+-/usr/bin
+-/usr/sbin
+-/usr/local
+Directory
+User Command directory
+System Admin commands
+Locally customized software
+
+
+
+
+
+
+
+
+
+
+
+Quiz 1:
+
+Description 
+Term
+The interpreter that executes commands typed as strings 
+Shell
+The visual cue that indicates an interactive shell is waiting for the user to type a command
+Prompt
+The name of a program to run.
+Command
+The part of the command line that adjusts the behavior of a command.
+Option
+The part of the command line that specifies the target that the command should operate on.
+Argument
+The hardware display and keyboard used to interact with a system.
+Physical Console
+One of multiple logical consoles that can each support an independent login session
+Virtual Console
+An interface that provides a display for output and a keyboard for input to a shell session.
+Terminal
+
+
+Quiz 2: 
+
+Description
+Shell Command
+Jump to the beginning of the previous word on the command line.
+Ctrl Left Arrow
+Separate commands on the same line
+;
+Clear from the cursor to the end of the command line.
+Ctrl K
+Re-execute a recent command by matching the command name.
+!string
+Shortcut used to complete commands, file names, and options.
+Tab
+Re-execute a specific command in the history list.
+!number
+Jump to the beginning of the command line
+Ctrl a
+Display the list of previous commands
+History
+Copy the last argument of previous commands.
+Esc +
+
+
+
+Lab Practice Exercises:
+
+Commands
+Use
+Result
+Date
+Display date as per Linux
+Sat Apr 5 08:13:50 PDT 2014
+Date +%R
+Display date (time) as per request
+8:13
+Date +%x
+Display date in order of month day and year
+03/27/2023
+passwd
+To change password
+
+
+File /etc/passwd
+To classify files by types
+
+
+File /bin/passwd
+To 
+
+
+File /home
+
+
+
+
+Head /etc/passwd
+Shows the beginning of the file
+
+
+Tail -n 3 /etc/passwd
+Shows the ending of the file
+
+
+Wc /etc/passwd
+Displays Word count
+
+
+Wc -l /etc/passwd or wc -l /etc/group
+Displays lines or words
+
+
+Wc -c /etc/group /etc/hosts
+Displays the character
+
+
+Tab 
+History 
+Display the command in typing 
+Check history of commands used 
+
+
+! (numbers) 
+!Ls
+Ls -l
+
+
+Displays the number of the output
+
+
+! 26 (number 26 of the used commands)
+Ls /etc to display the command lines 
+
+
+Esc+ 
+To copy the last word of previous command
+
+
+
+
+Shortcuts of Command Lines and Description
+
+Shortcut
+Description
+Ctrl+a
+Goes to Beginning of the curser in command
+Ctrl + e 
+Goes to Last of the curser in command
+Ctrl + Tab 
+Next Tab
+Ctrl + Tab + Shift
+Previous Tab
+Ctrl + T
+Next Tab
+Ctrl + C
+To go  back from echo result or any blank result of the argument
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Matching File Names Using Path Expansion:
+
+Command and Argument
+Description 
+Example
+
+
+
+
+
+
+Ls -ltr
+ls
+List the data in details
+
+
+Var bin temp bin 
+Mkdir test
+Mkdir -p test1/test2/test3/dir
+Create new directory
+
+
+
+
+Touch price vat tax 
+Touch beta.txt , page.txt, txt.txt
+Create new files
+
+
+Cp file1 file2
+Cp file1 file2 file3 dir
+Copy Files
+Copy multiple file source
+Cp edited ~ /glob/pre-edit/
+After ~ is destination of files
+Cp -r dir1 dir2
+Cp -r dir 1 dir 2 dir3
+Copy directory
+(If we copy anything from default folders of Linux home use sudo in front of the command and argument)
+Cp -r videos ~/glob/
+After ~ is destination of directory
+Mv file1 file2
+Mv file 1 file 2 dir
+Move File
+mv videos ~/glob/pre-edit/
+Mv 
+Rm txt.txt
+Rm -r dir1
+Rm -rf dir1 dir2 dir3
+Rmdir dir1
+Rmdir-p dir1/dir2
+Remove any new directory
+Remove one or multiple directory/files 
+Remove empty directory 
+
+
+Cd /home/mkafle/test
+
+
+Go to the directory
+Takes to the directory requested to work on it
+~  (to home directory)
+/ (to root user)
+Tilde (expansion)
+Backward slash
+/home
+/home
+~- (To previous Directory)
+Cd ..
+Cd ../../..
+Tilde Dash
+To go to previous directory
+To go back to couple more directory
+/home/mkafle/test
+/home/mkafle
+/home
+
+
+~+ (To Current Directory) or pwd
+Present working directory
+/home/mkafle/test
+~username (to home directory)
+Home 
+/home
+* (any string of zero or more characters)
+To display the file names and chosen file names according to instruction
+* (Displays all file names)
+a* (displays file names with with a on it)
+*a* (displays file names with with a and other character on it)
+[ab]* (Displays file name s with ab and other character on it)
+?* (any single character)
+To display the character or files 
+?* alpha.txt , beta.txt, tix.txt
+(displays file names with with a character or more than one character on it)
+????*.txt
+To display the character or files
+Beta.txt , pric.txt , tix.txt (displays file names with with four character or less than one character on it)
+[ab]*
+To display one character of the files in the enclosed class
+Alpha.txt . beta.txt
+
+
+[!ab]*
+[^ab]*
+To display one character of the files not in the enclosed class
+Cat.txt , tix.txt , deta.txt
+[[:alpha:]]*
+To display any alphabetic character of the files in the enclosed class
+All files in alphabetical order
+[[:lower:]]*
+To display any lower-case character of the files 
+
+
+[[:upper:]]*
+To display any upper-case character of the files 
+
+
+[[:alnum:]]*
+To display any alpha and numeric character of the flies 
+
+
+[[:punct:]]*
+To display any printable character of the flies not a space or alphanumeric
+
+
+[[:digit:]]*
+To display any numeric character of the flies 
+
+
+[[:space:]]*
+To display any whitespace character: may include tabs, newline, or carriage returns, and form feeds as well as space. 
+
+
+Brace Expansion : 
+Echo {....}.log
+Echo file {1..3}.txt
+Echo file{a,b}{1,2}.txt
+
+
+To display comma separated list of strings or sequence of expression
+Echo {sunday , monday, tuesday}.log 
+Sunday.log monday.log tuesday.log
+File1.txt file2.txt
+Command Substitution:
+
+Echo today is `date`.
+
+
+
+
+Today is Wednesday
+Protecting arguments from expansion: 
+host=$(hostname -s); echo host
+Echo “***** hostname is ${host} *****”
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Getting Help in Red Hat Enterprise Linux:
+
+Command 
+Result
+Spacebar 
+Scroll forward (down) one screen
+PageDown
+Scroll forward (down) one screen
+PageUp
+Scroll backward (up) one screen 
+DownArrow
+Scroll forward (down) one line
+UpArrow
+Scroll backward (up) one line
+d
+Scroll forward (down) one half-screen
+u
+Scroll backward (up) one half-screen
+n
+Repeat previous search forward (down) in the man page
+N
+Repeat previous search backward (up) in the man page
+g
+Go to start of the man page
+G
+Go to end of the man page
+q
+Exit man and return to the command shell prompt
+
+
+
+
+# Use of keyword: search for man pages
+Man -k passwd 
+Details resulted through search
+ Man man
+
+
+Man -k zip
+
+
+ Su - 
+Password: 
+Su assumes username of root
+Man -k boot
+
+
+Man -k ext4
+
+
+
+
+
+# Reading Documentation Using Pinfo (Program for viewing info files):
+# Reading Documentation using usr/share/doc
+
+Package Documentation:
+Latest news about the vim project
+: cd /usr/share/doc
+: less vim-common-*/README.txt
+Wiki URI for the yum package
+: less yum-3*/README
+
+Examples for Command Line bc calculator
+: ls -l bc-*/Examples
+Read the provided GRUB2 manual?
+: firefox grub2-tools-*/grub.html
+Software that provides its documents as a separate package
+: yum list *-doc*
+: cd 
+
+
+
+# Creating , Viewing and Editing Text Files:
+Redirection and Pipelines
+ 
+Number
+Channel Name
+Description
+Default Connection
+Usage
+0
+Stdin 
+Standard input 
+Keyboard
+Read Only
+1
+stdout
+Standard Output
+Terminal
+Write Only
+2
+stderr
+Standard Error
+Terminal
+Write Only
+3+
+filename
+Other Files
+None
+Read and write
+
+Examples of output direction and Pipelines:
+
+Use of less and output of the ls command to display on the terminal one at a time
+Ls -l /udr/bin | less
+Output of ls command piped to wc to count the numbers of lines received from ls and prints that to the terminal
+Ls | wc -l 
+Use of head  to output the first 10 lines of output from command wit the final result redirected to a file
+Ls -t | head -n 10 > tmp/ten-last-changed-files
+Output of the ls command will go to the file
+Less will display nothing on the terminal
+Now: with use of tee, displays on the terminal 
+Ls > /temp/saved-output | less
+
+Ls -l | tee /tmp/saved-output | less
+Tee used at the end of pipeline, output can be saved and displayed in terminal at the same time
+Ls -t | head -n 10 | tee /tmp/ten-last-changed-files
+
+
+	Quiz:
+Result needed 
+Redirection Syntax Used
+Example
+Redirect stdout to overwrite a file
+>file
+Cat test.txt >demotest.txt
+Diff test.txt demotest.txt
+Redirect stdout to append to a file (adds to the existing file details)
+>>file
+Cat test.txt >>demotest.txt
+Or echo “Here is he” >>demotest.txt
+
+
+Redirect stderr to overwrite a file 
+2>file
+Cat test.txt 2>demotest.txt 
+Redirect stdout and stderr to append to the same file
+&>>file
+(ampersand) 
+
+
+Send command output to file; errors to different files. 
+>file 2>file2
+
+
+Send output and errors to the same file, but preserve existing file content.
+&>file
+
+
+Send output and errors to the same new, empty file
+>>file2>&1
+
+
+Run a command, but throw away all possible terminal displays.
+&>/dev/null 
+
+
+Display command output to terminal, ignore all errors.
+2>/dev/null
+Cat test1.txt 2> /dev/null
+Send command output to both the screen and a file at the same time.
+| tee file 
+
+
+Run command, save output in a file, discard error messages.
+> file 2> /dev/null 
+
+
+
+
+
+
+
+ # Editing text files from the Shell Prompt:
+
+ Vi and Vim:
+Has wide range of function
+Vi creates a new file with sub-content , 
+And edits existing text file
+
+Command
+Description
+Result/ Example
+Man vi 
+To open vi and read the function
+Opens the instruction or detailed pages of info
+Vi Filename 
+:w 
+To Create a new directory in vi
+
+
+Vi <filename>
+Vi Test
+To open a command mode and start 
+
+
+Press i 
+To create a text in the file
+
+
+Press Esc 
+:w
+:wq
+:q!
+To exit the insert mode
+To save the text
+To save and exit the text edit 
+To quit vim 
+
+
+Press hijkl 
+To navigate through the files while in command mode
+
+
+Press X 
+Press dd
+To delete the letter or word 
+To delete line 
+
+
+Press u 
+To undo mistaken edits
+
+
+Press v (to rearrange files)
+To enter visual mode
+
+
+Press y (to rearrange files)
+
+
+To yank /  copy the selection
+
+
+Press p (to rearrange files)
+
+
+To paste the selection
+
+
+Press /searchword
+/test
+To search the word in the text file edited or created while in insert mode
+
+
+":%s/old_word/new_word/g" 
+
+
+To replace old word with new word
+
+
+
+
+
+
+
+
+
+Managing Local Linux Groups and Users :
+To administer Local password password policies.
+User (UID): Run by individual user, owned by user, access and edits are restricted by user
+Group (GID): Primary groups -
+ 	       : Supplementary groups -
+
+Command /Keywords 
+Uses/Description
+Id 
+Info about current logged in user 
+Ls  -l /tmp
+View user associated with a file or directory
+Ps au
+View process information
+/etc/group
+Location of local group information
+/etc/passwd
+Location of local user account information
+GID
+A number that identifies the group at the most fundamental level
+UID
+A number that identifies the user at the most fundamental level 
+Login shell
+The program that provides the user's command line prompt 
+Home Directory
+Location users personal fiels 
+Primary Group
+The fourth field of /etc/passwd
+
+
+Notes: Internally operating system tracks users by UID numbers
+
+# Gaining Superuser Access:
+
+Su - <username>
+Asks for a passwd: 
+Changes to root user
+Use of Sudo:
+- Sudo usermod -L username
+Password
+- Sudo tail /var/log/secure
+
+- cat /etc/sudoers
+To lock a user account 
+Sudo allows users to use usermod as root
+
+All commands executed using sudo are logged by default to / var/log/secure
+
+
+Exercises: 
+Tail - 5 /var/log/messages
+Sudo tail -5 /var/log/messages
+Cp /etc/motd /etc/motdOLD
+Sudo cp /etc/motd /etc/motdOLD
+
+To view last 5 lines of the var/log/messages
+Use of sudo 
+Make a backup of the config files in the /etc directory 
+Use of Sudo 
+
+
+-Rm /etc/motOLD
+- sudo rm etc/motOLD
+- echo “Welcome to class” >> /etc/motd
+-sudo vim /etc/motd
+Remove the file that was created
+Sudo
+Edit a config file in the /etc directory
+Sudo Version
+
+
+#Managing Local User Accounts:
+Create, Modify, restrict
+
+
+Commands Creating Users and Groups
+Description
+Useradd mghimi -m -s /bin/bash -g users -c “Use for advanced Linux”
+To create username and assign the group 
+-m , -s , -c are default to create a new user and group
+
+
+groupadd -g 20000 hr
+- tail - 20 /etc/group
+- usermod -aG hr mkafle
+To create Group name hr
+-g default and find/view a group description on list
+To assign user to the supplementary group
+- Sudo group add -r appusers
+- Sudo groupmod -n javaapp appusers
+- Sudo groupmod -g 6000 hr 
+-Sudo groupdel1 javaapp
+To create a system group using a GID 
+To change group name and give a new name 
+
+To specify new GID top the group
+To delete the group
+
+
+Password Change and : 
+
+Command
+Description
+Chage -d 0 mkafle
+Will force a password update on next login
+Chage -l mkafle
+Lists a username’s current settings
+Chage -E YYYY-MM-DD mkafle
+Will expire Account in Certain date
+Usermod -s /sbin/nologin mghimi
+Su -mghimi
+To login to the users system directly
+
+
+
+
+
+
+
+
+# Controlling Access to Files with Linux File system Permissions:
+Access to files by user are controlled by file permissions. 
+
+Effects of permission on files and directories
+
+Permission
+Effects on Files 
+Effects on Directories
+R (read)
+Contents of the files can be read.
+Content of the directory can be listed (file names)
+W (write)
+Content of the files  can be changed.
+Any file in the directory can be created or deleted.
+X exec)
+Files can be executed as commands.
+Contents of the directory can be accessed . 
+
+
+
+Command 
+Description and uses
+Ls -l 
+Expands the file listing to include both permissions of the file and ownership
+Ls -ld /home 
+Displays the expanded listing of all the files that reside inside the directory.  
+-Chmod (Change Mode ) Who WhatWhich file|directory
+- Chmod ### file|directory
+
+
+Who is u, g, o, a (For User, group, other, all)
+What is +, -, = (for add, remove , set exactly)
+Which is r, w, x (for read, write, execute) 
+# is sum of r=4 , w=2, x=1 
+
+
+Exercises:
+
+Commands 
+Description 
+Chmod go-rw Test.txt
+Remove read and write Permission for the group and other on file 
+Chmod a +x file2
+Add Execute Permission for everyone on file 
+Chmod 750 demotext.txt
+Set read write and execute for user, read, and execute for group and no permission for other on file or directory
+Chmod -R g+rwX demotext.txt
+R to recursively set permission on the files in a directory
+X to set permission symbolically 
+
+
+
+Changing File/Directory User or Group Ownership
+
+Commands 
+Functions 
+Chown test mghimi
+To change the ownership of the file test to mghimi from mkafle
+Chown -R mghimi test
+To change the ownership of the entire directory tree
+Chown :admins test
+(change the group test to admins)
+To change the group ownership of a file by preceding the group name with a colon (:)
+Chown visitor :guests test
+To change both owner and group at the same time by using the syntax owner :group
+Managing File Security From the Command Line: (in root users)
+Lab permission setup
+Mkdir /home/text.txt
+Shown :hr /home/ text.txt
+Chmod g+w /home/text.txt
+Chmod 770 /home/text.txt 
+Ls -ld /home/text.txt
+Exit 
+Su mghimi
+Password 
+Cd /home/mghimi
+Touch new file 
+Ls -l newfile 
+
+
+
+
+Creates shared group with two new users 
+Creates a directory in home
+Changes the group ownership 
+Ensures the permission of text.txt allows group members to create and delete files
+Ensures the permission of text.txt forbids others from accessing its files 
+ Exit the root shell and switch to the different users created 
+
+Open the terminal for mghimi
+Create an empty file 
+Record the default users and group ownership of the new file and its permission 
+Managing Default Permissions and File Access:
+Ls a-l /usr/bin/passwd
+Ls -ld / tmp
+
+
+
+
+
+Command will run as the user of the file 
+
+
+
+
+Effects of special permissions on the files and directories:
+
+Special 
+Effects on Files
+Effect on Directions 
+U + s (suid)
+Numerically: 4
+
+
+File executes as the group that owns the files 
+No effect 
+g + s (sgid)
+Numerically: 2
+Files executes as the group that owns the file. 
+Files newly created in the directory have their group owner set to match the group owner of the directory. 
+O + t (sticky)
+Numerically: 1
+No effect
+Users with write on the directory can only remove files that they own; they cannot remove or force saves to files owned by other users.
+Terms: 
+Sgid : 
+Sticky:
+Suid: 
+
+
+
+
+Chmod g+s directory
+Add the setgid bit on directory 
+
+
+
+
+Chmod 2770 directory 
+Set the setgid bit and 
+Read and write / execute for user and group on directory
+
+
+- Umask 
+- mkdir /tmp/shared 
+-ls -ld /tmp/shared 
+-touch /tmp/shared/defaults
+-ls -l /tmp/shared/defaults 
+
+
+
+Displays the current values of the shell’s umask
+
+
+
+Login as new users 
+
+
+
+# Controlling New File Permissions and Ownership:
+
+
+→ Monitoring and Managing Linux Process:
+  
+Process: its a running instances of a launched program
+A process consists of:
+An address space of allocated memory
+Security properties including ownership credentials 
+Process State
+One or more execution threads of program code 
+Linux Process States:
+
+Name 
+Flag
+Description
+Running
+R
+Task Running : waiting to run and executing on a CPU 
+Sleeping
+S
+
+D
+
+K
+
+I
+Task Interruptible : waiting for some condition, a hardware request , signal
+Task Uninterruptible : Sleeping , used only under specific conditions 
+
+Task Killable : Like D state but modified to allow the waiting task to respond to a signal to be killed
+
+
+Stopped 
+T
+
+T
+
+
+Task Stopped : Process stopped and suspended
+
+Task Tarced : temporarily stopped and shares same T flag
+Zombie
+Z
+
+X
+Exit Zombie: A child process signals its parent as it exists. 
+
+Exit Dead: When the parent cleans up the remaining child process structure.
+
+
+
+
+Command and Process 
+System Description
+
+
+exec
+
+
+
+
+Systemd 
+all processes are descendants of the first system process.
+
+
+Ps aux 
+
+Ps -aux
+
+Ps lax 
+
+
+Ps -ef
+(ps displays once)
+Displays the list of process for common details
+
+
+Long listing options for technical details
+UNIX syntax uses the options to display all process
+
+
+Top 
+Displays the common details for a update process 
+
+
+
+
+
+Note:
+Can use PS command to check running process and list current processes on terminal
+Parent and child process
+
+# Controlling Jobs:
+
+Job Control : A single shell instance to run and manage multiple commands 
+Foreground: Only one job and read input and keyboard-generated signals from a particular terminal window at a time. 
+Background: Member of any job associated with that terminal, cannot read input or recieve keyboard generated interrupts.
+Controlling terminal:
+
+
+Sleep 10000 & 
+Displays job number and the PID of the new child process. 
+Example_command | sort | mail -s “Sort output” &
+Backgrounding a pipeline with an ampersand 
+Jobs 
+Tracks jobs , per session in a displayed table
+Fg %1
+
+
+Cltr + z , ^ Z
+Background job can be brought to the foreground by using the fg command with its job ID (%job number)
+To send a foreground process to the background,
+The job is placed in the background and suspended. Process state is S
+Ps j
+Displays information related to a job, process state in T
+Bg %1
+To start the suspended process in the background
+
+
+# Killing Processes:
+
+Use Command to kill and communicate with process
+Daemon Process
+End User sessions and processes
+Default Action of each signal 
+Term: Cause a program to terminate at once
+Core: Cause a program to save a memory image, then terminate
+Stop: Cause a program to stop executing (suspend) and wait to continue (resume)
+
+
+ 
+
+
+
+
+Signal Number
+(used in INTEL * 86 system)
+Short Name
+Definition
+Purpose
+1
+HUP
+Hangup
+Used to report termination of the controlling process of a terminal
+Used to request process reinitialization without termination
+2
+INT
+Keyboard interrupt 
+Cause program termination
+Can be blocked or handled 
+INTR key with Cltr +C
+3
+QUIT
+Keyboard Quit
+Similar to SIGINT 
+Produces a process dump at termination
+QUIT key with Cltr + \ 
+9
+KILL
+Kill, Unblockable
+Causes abrupt program termination
+Cannot be blocked, ignored or handled
+Always Fatal
+The kill command sends a signal to a process by ID.
+15
+(default)
+TERM
+Terminate
+Cause program termination
+Unlike SIGKILL, can be blocked. Ignored or handled 
+Allows self-cleanup
+18
+CONT
+Continue
+Sent to a process to resume if stopped
+Cannot be blocked 
+Always resumes the process, even if handled
+19
+STOP
+Stop, unblockable
+Suspends the process
+Can not be bocked oir handled
+20
+TSTP
+Keyboard stop
+Unlike SIGSTOP, can be blocked , ignoed and handled 
+SUSP key with Cltr +z 
+
+
+
+
+
+
+# Monitoring Process Activity:
+Interpret uptime and Load averages : Depicts task individually not only processes , Counts each physical CPU core and the microprocessor hyperthread as separate execution unit.
+
+Monitoring real-time processes
+
+Commands 
+Uses
+Grep “model name” /proc/puinfo
+
+Grep ``model name” /proc/puinfo | wc - l 
+For the kernel representation of system CPUs.
+Each CPUs has independent request queues.
+Top, Uptime, W ,Gnome-system-monitor 
+Display load average values
+Notes: 
+-Idle CPU queue has a load number of 0
+-Each ready and waiting thread adds as a count of 1.
+
+
+
+
+Real Time Process Monitoring:
+The process ID is PID
+User name is process owner USER
+CPU time TIME , process command name COMMAND
+
+
+
+
+
+Fundamental Keystrokes in top:
+
+
+
+Chap 8:
+# Controlling services and daemons: 
+To control network monitor network service
+System daemons: systemd
+Daemons are processes that wait and run in the background performing various tasks.
+Loaded 
+Active (running)
+Active (exited)
+Active (waiting)
+Inactive 
+Enabled
+Disabled 
+Static
+Unit configuration file has been processed.
+Running with one or more continuing processes.
+Successfully completed a one-time configuration.
+Running but waiting for an event.
+Not Running
+Will be started at boot time.
+Will not be started at boot time.
+Can not be enabled , but may be stared by an enabled unit automatically.
+
+
+
+
+Chap 9
+# Configuring and securing openssh services:
+Log into a remote system using ssh to run commands from a shell prompt
+OpenSSH Secure Shell: Securely run a shell on a remote system.
+Normally used to remotely log into the system
+
+
+Secure Shells Examples : 
+Ssh remotehost
+Exit
+Ssh remoteuser@remotehost
+Ssh remoteuser@remotehost hostname
+$w -f
+
+
+
+
+Create a remote interactive shell as a current user and exit 
+Connect to remote shell as a different user 
+Execute a single command on a remote host 
+W displays a list of users currently logged into the computer
+
+
+SSH HOST KEYS: 
+Cat ~/.ssh/known_hosts
+
+Ls /etc/ssh/*key* , /etc/ssh/ssh_host_key*
+
+Host Ids are stored in keys on local client system
+Host keys are stored in key on the SSH server.
+
+
+
+Configuring SSH KEY- BASED Authentication:
+Users can authenticate ssh logins without a password by using public key auth.
+Using ssh-agent and ssh-add to passphrase
+Ssh-keygen generates 
+~/.ssh/id_rsa (private key)
+~/.ssh/id_rsa.pub (public key)
+
+ssh-copy-id
+Generate new key
+
+
+
+To copy the public key to the correct location on a remote system.
+
+
+Customizing SSH Service Configuration: 
+Customize sshd configuration to restrict direct logins as root or to disable password-based authentication.
+Do not use the root user from directly logging into the system with ssh.
+
+Chap 10
+
+Analyzing and storing logs:
+To locate and accurately interpret relevant system log files for troubleshooting purposes
+
+
+Log File 
+Purpose
+/var/log/messages
+Most syslog messages are logged here. The exceptions are messages related to authentication and email processing, that periodically run jobs, and those which are purely debugging related.
+/var/log/secure
+The log file for security and authentication-related messages and errors.
+/var/log/maillog
+The log file with mail server-related messages.
+/var/log/cron
+The log file related to periodically executed tasks
+var/log/boot.log
+Messages related to system startup are logged here.
+
+
+
+
+Note:
+
+The rsyslogd service uses the facility and priority of log messages to determine how to handle them. This is configured by the file /etc/rsyslog.conf and by *.conf files in /etc/ rsyslog.d. Programs and administrators can change rsyslog.d configuration in a way that will not be overwritten by updates to rsyslog by putting customized files with a .conf suffix in the / etc/rsyslog.d directory.
+
+Syslog priorities 
+
+CODE
+Priority
+Severity
+0
+emerg
+System is unstable
+1
+alert
+Action must be taken immediately
+2
+critical
+Critical condition
+3
+err
+Non-critical error condition
+4
+warning
+Warning condition
+5
+notice
+Normal but significant event
+6
+info
+Informational event
+7
+debug
+Debugging-level message
+
+
+
+#### RULES #### # Log all kernel messages to the console. 
+
+# Logging much else clutters up the screen. #kern.     * /dev/console
+
+ # Log anything (except mail) of level info or higher. 
+# Don't log private authentication messages! *.info;mail.none;authpriv.none;cron.none /var/log/messages
+
+ # The authpriv file has restricted access. authpriv.*   /var/log/secure 
+
+
+# Log all the mail messages in one place. mail.*   -/var/log/maillog 
+# Log cron stuff cron.*    /var/log/cron
+
+ # Everybody gets emergency messages *.emerg     :omusrmsg:* 
+
+# Save news errors of level crit and higher in a special file. Uucp,news.crit    /var/log/spooler
+
+ # Save boot messages also to boot.log local7.* /var/log/boot.log
+
+
+
+Monitoring Log File with Tail:
+Tail -f /var/log/secure : 
+
+
+
+# Managing Red Hat Enterprise Linux Networking:
+Config basic IPv4 networking on Red Hat
+
+
+Layers of network model specified in RFC1122
+
+
+Application
+Each application has specifications for communication so that clients and servers may communicate across platforms. Common protocols include SSH (remote login), HTTPS (secure web), NFS or CIFS (file sharing), and SMTP (electronic mail delivery).
+Transport
+Transport protocols are TCP and UDP. TCP is a reliable connection-oriented communication
+A list of well-known and registered ports can be found in the /etc/services file.
+Internet
+The Internet, or network layer, carries data from the source host to the destination host.
+Link
+The link, or media access, layer provides the connection to physical media. 
+
+
+
+IP Address:
+Netmask:
+IPv4 Addresses:
+Host Address
+
+
+
+Network Settings
+Correctness
+IP address: 172.17.0.351/16 Gateway: 172.17.0.1 DNS server: 172.17.0.254 
+Invalid IPv4 address 
+IP address: 10.1.2.3/24 Gateway: 10.1.2.1 DNS server: 172.17.4.53
+This configuration is feasible.
+IP address: 192.168.7.0/24 Gateway: 192.168.7.1 DNS server: 192.168.0.254
+IP address cannot be a network address.
+IP address: 10.4.5.6/24 Gateway: 10.4.6.1 DNS server: 192.168.0.254
+Gateway is not on the same subnet.
+IP address: 172.17.23.5/16 Gateway: 172.17.0.1 
+Name resolution is not configured.
+
+
+
+
+Validating Network Configuration: 
+Displaying IP addresses:
+ 	Ip addr show eth0 ; ip -s link show eth0
+
+Troubleshooting Routing: Ip route
+Ping command to test connectivity:
+Ping -c3 172.25.X.254
+Traceroute or tracepath:
+Tracepath access.redhat.com
+Troubleshooting Ports and services: ss -ta
+Listed in /etc/services
+
+
+Option for ss and netstat
+Description
+-n 
+Show numbers instead of names for interfaces and ports.
+-t
+Show TCP sockets. 
+-u
+Show UDP sockets.
+-l
+Show only listening sockets.
+-a
+Show all (listening and established) sockets.
+-p
+Show the process using the sockets.
+
+
+Configuring Networking with nmcli:
+Command-line and graphical tools talk to NetworkManager and save configuration files in the / etc/sysconfig/network-scripts directory. 
+
+Nmcli Commands 
+Uses
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Archiving and Copying Files Between Systems:
+To copy files from one system to another
+ Managing Compressed Tar Archives:  To create new compressed archive files and extract files from existing archive files. 
+Tar command is used for backup
+
+C create an archive
+
+
+T list the contents of an archive 
+
+
+X extract an archive
+
+
+F file name 
+
+
+V verbosity , to see which file gets added and extracted from the archives
+
+
+
+
+Use of Tar:
+
+ tar cf archive.tar file1 file2 file3
+ ls archive.tar
+Create the archive.tar in home directory
+Tar tf /root/etc.tar
+List the content of the archive
+/root/etc.tar to the /root/etcbackup 
+Mkdir /root /etcbackup
+Cd /root/etcbackup
+Tar xf /root/etc.tar
+Extract the archive 
+To named directory
+
+
+
+
+
+
+
+
+
+
+
+Chap: 13 
+Installing and Updating Software Packages:
+To download, install, update, and manage software packages fromRed Hat and YUM Package repositories.
+Attach systems, register a system
+Install Yum and manage installing, updating, removing, and managing software packages 
+Performs dependency resolution.
+
+Uses Yum Packages:
+
+Command
+Uses/Task
+Yum list (NAME-PATTERN)
+List installed and available packages by name
+Yum grouplist
+List installed and available groups 
+Yum search KEYWORD
+Search for a package by keyword
+Yum info PACKAGENAME
+Show details of a package
+Yum install PACKAGENAME
+Install a package 
+Yum groupinstall
+Install a package group
+Yum update
+Update all packages
+Yum remove packagename
+Remove a package
+Yum history
+Display transaction hsitory
+
+
+Use Yum to Install Local Package Files
+
+
+Task
+Command
+Display information about a package
+Rpm -q -i NAME
+List all files include in a package
+Rpm -q -l NAME
+List configuration files included in a package 
+Rpm -q -c NAME
+List documentation files included a package
+Rpm -q -d NAME 
+Show a short summary of the reason for a new package release
+Rpm -q --changelog NAME
+Display the shell scripts included in a package
+Rpm -q --scripts NAME 
+
+
+
+
+Extracting Files From RPM Packages
+Specify the path of the file 
+Eg: rpm2cpio wonderwidgets-1.0-4.x86_64.rpm | cpio -id “*txt” 
+
+Chapter 14
+ACCESSING LINUX FILE SYSTEMS
+Identify a directory in the file system hierarchy and what storage device it is stored on.
+A long listing of the /dev/vda device file on serverX reveals its special file type as b, which stands for block device: ls -l /dev/vdabrw-rw----.
+Exceptions are hard drives in virtual machines, which typically show up as /dev/ vd or /dev/xvd. 
+
+
+Readable options:
+-h 
+-H
+SI Units used in advertising the products 
+
+-h reports in KiB(2 ). MiB(2 ), or GiB(2 )
+-H reports in SI units: KB(10 ), gb(10 ), MB(10 )
+
+
+
+#Identifying File Systems and Devices:
+
+Description 
+Device File
+The device file of a SATA hard drive residing in /dev
+/dev/sdc
+The device file of the second partition on the first SATA hard drive in /dev 
+/dev/sda2
+The device file of a logical volume in /dev
+/dev/vg_install/lv_home
+The device file of the second disk in a virtual machine in /dev
+/dev/vdb
+The device file of the third partition on the first SATA hard drive in /dev.
+/dev/sdb3
+The device file of the third partition on the second disk in a virtual machine in /dev
+/dev/vdb3
+
+
+
+
+
+
+
+
+
+
+
+#Mounting and Unmounting File Systems:
+
+
+Command
+Description
+Blkid
+
+Unmounting is not possible if the mount point is accessed by a process. For umount to be successful, the process needs to stop accessing the mount point.
+Overview of an existing partitions with a file system on them and the UUID of the file system, as well as the file system used to format the partition
+Monut /dev/vdb1 /mnt/mydata
+Mount by device file of the partition that holds the file system.
+mount UUID="46f543fd-78c9-4526-a857-244811be2d88" /mnt/mydata
+Mount the file system by universal unique id, or the UUID, of the file system.
+To unmount a file system, the umount command expects the mount point as an argument.
+umount
+ lists all open files and the process accessing them in the provided directory
+lsof
+
+
+
+
+
+
+
+#Making Links Between Files:
+
+Hard Link : a new directory entry with a reference to an existing file on the file system
+
+Commands
+Description
+Ls -l 
+shows the hard link count after the permissions and before the owner of a file
+Echo “Hello Pride” >newfile.txt
+Ls -l newfile.txt 
+
+
+Create a newfile 
+Ln newfile.txt /tmp/newfile-hlink2.txt
+Ls -l  newfile.txt /tmp/newfile-hlink2.txt
+
+
+Create a hard link for existing newfile.txt in the /tmp directory
+Rm -f newfile.txt
+Ls -l /tmp/newfile-link2.txt
+Cat /tmp/newfile-link2.txt
+
+
+Even if the original file gets deleted, the content of the file is still available as long as at least one hard link exists.
+
+Soft Link: ln -s creates the soft link , soft link is not a regular file that points to existing  files or directory.
+
+
+Ln -s /root/newfile-link2.txt /tmp/newfile-symlink.txt
+Ls -l newfile-link2.txt /tmp/newfile-symlink.txt1
+Create a soft link 
+Rm -f newfile=link2.txt 
+Removed files are still open to the file but target is gone in soft link 
+Ls -l /tmp/newfile-symlink.txtl
+
+
+Cat /tmp/newfile-symlink.txt
+
+
+Ln -s /etc /root/configfiles
+Cd /root/cofigfiles
+pwd
+Create a soft link /root/configfiles pointing to the /etc directory.
+
+
+#Locating Files in The system:
+Locating Files by name with locate
+the file name or path is only a partial match to the search query.
+-i option performs a case-insensitive search
+e -n option limits the number of returned search results by locate
+Locate passwd
+Locate image 
+
+Locate -i message 
+Locate -n 5 snow.png
+
+updatedb
+-name option followed by a file name looks up files matching the given file name and returns all exact matches.
+Find / -name sshd_config
+Searches for files in the / directory on server that ends in .txt
+Find / -name ‘*.txt’
+Search for the files in /eatc/ that contains pass
+Find /etc -name ‘*pass*’
+To perform a case-insensitive search for a given file name, use the -iname option, followed by the file name to search
+Find / -iname ‘*message*’
+Search for files owned by the user student in the /home/student directory
+Search for files owned by the group student in the /home/student directory
+Find -user student
+
+Find -group student
+Search for files owned by user/group ID 1000 in the /home/student directory
+find -uid 1000 
+Find -gid 1000
+Search for files owned by user root and group mail on the serverX machine
+ find / -user root -group mail
+
+
+
+Description of Complex example of find
+command
+ match any file for which the user has read, write, and execute permissions, members of the group have read and write permissions,and others have read-only access:
+find /home -perm 764
+To match files for which the user has at least write and execute permissions, and the group has at least write permissions, and others have at least read access:
+find /home -perm -324
+To match files for which the user has read permissions, or the group has at least read permissions, or others have at least write access:
+Find /home -perm /442
+When used with / or -, a value of 0 works like a wild card, since it means "a permission of at least nothing."
+
+
+To match any file in the /home/student directory for which others have at least read access
+Find all files in the /home/student directory where other has write permissions
+find -perm -004
+
+
+Find -perm -002
+Search for files with a size of 
+exactly 10 megabytes. 
+More than 10 gigabytes
+Less than 
+
+Find -size 10M 
+find -size +10G 
+Find -size -10k
+The -mmin option, followed by the time in minutes, searches for all files that had their content changed at exactly the given time in the past. 
+ file content changed exactly 120 minutes ago on serverX,
+
+
+
+
+Find /-mmin 120
+
+
+
+
+
+
+
+
+
+Chapter 15 
+Using Virtualized Systems:
+
+#Managing a Local VIrtualization Tool
+
+
+Purpose 
+Virsh Subcommand
+Boot an existing configured virtual machine
+Start
+Immediately stop a virtual machine, similar to unplugging it. 
+Destroy
+Delete the configuration for a virtual machine permanently
+Undefine
+Use an XML configuration to create and boot a virtual machine
+Create
+Use an XML configuration to create a virtual machine
+Define
+Gracefully stop and restart a virtual machine
+Reboot
+Gracefully stop a virtual machine
+Shutdown
+
+
+
+Single system hardware providing KVM support 
+Red Hat Enterprise Linux
+Multiple system hardware providing virtualized redundancy
+RHE Virtulazation
+Multiple system hardware providing private cloud
+RHEL OpenStack platform
+Cloud provider providing public cloud
+OpenStack in public cloud 
+Management utility for standalone KVM hosts
+virt-manager
+Management utility for multiple host virtualization platform
+RHEV-M
+Management utility for all virtualization and cloud platforms combined
+CloudForms
+
+
+
+
+
+Review: 
+
+Commands
+Description
+What is ls 
+ls
+Gives description of the command 
+Listing 
+Cd 
+Change directory
+pwd
+print /present working directory
+mkdir
+Make directory
+Rmdir 
+Remove directories 
+Cat file1.txt
+Print details of file1.txt
+Mv : mv file1.txt newfile.txt
+move files or directories
+Cp : cp file1.txt /tmp
+Copy files or directories
+Tail -n 10 file1.txt
+Display last 10 lines of the file
+Head -n 10 file1.txt
+Display first 10 lines of the file 
+Less file1.txt
+Display file contents page by page 
+Top 
+
+atop
+Display system resources usage and overall view 
+For linux server performance analysis
+Ps aux
+Display running processes
+kill
+Terminate processes
+Df  : df -h
+Display disk space usage
+Du : du -sh
+Display directory space usage
+ifconfig
+Configure network interfaces
+Ping : ping ip address - 192.168.1.1
+Test network connectivity
+Netstat : netstat -an
+Display Network Connections
+Ssh Ip Address - your ip 
+Securely connect to a remote system
+Scp : scp file1.txt user@192.168.1.1:/path/to/destination
+Securely copy files between systems
+Wget : wget https://example.com/file.zip
+Download files from web
+Tar : tar -czvf mydir.tar.gz mydir
+Create and extract compressed archives
+Crontab 
+02 *** /path/to/command
+Schedule tasks to run at specific times
+To run task at 2:00am everyday
+Useradd manu
+Add anew user to system
+Passwd manu
+Change user password
+userdel
+used to delete a user account and all related files.
+usermod
+used to modify or change any attributes of an existing user account.
+sudo
+Execute a command with superuser privilage
+Free 
+Display memory usage
+Find 
+Locates file based on the command
+Ncdu 
+Disk utility for  unix systems
+Ip 
+Check ip route
+pstree
+Display the tree of processes
+Last
+w
+Display last logged in users
+Display current logged in users sessions
+Grep 
+Search a file for a pattern of characters, then display all matching lines 
+uptime
+Shows system uptime and load leverage
+vmstat
+shows system memory, processes, interrupts, paging, block I/O, and CPU info
+htop
+Interactive process viewer and manager
+dstat
+view processes, memory, paging, I/O, CPU, etc., in real-time. All-in-one for vmstat, iostat, netstat, and ifstat.
+iftop
+Network trraffic viewer
+nethogs
+Network traffic analyzer
+iotop
+Interactive I/O viewer
+Get an overview of storage r/w activity
+iostat
+For storage I/O statistics 
+ss
+Utility to investigate sockets
+Glances 
+Nmon 
+Htop 
+Top alternatives
+man
+Reading system reference manuals 
+Apropos : apropos 10
+Search man page names and descriptions
+Rsync 
+Remote file transfers and syncing
+Tar 
+An archiving utility
+gzip
+ file compression and decompression.
+bzip2
+similar to gzip. It uses a different compression algorithm
+zip
+for packaging and compressing (to archive) files.
+cron
+set up scheduled tasks to run.
+nmcli
+command-line tool for controlling network manager
+host
+Perform DNS lookups in Linux
+dig
+DNS lookup utility
+curl
+Transferring data using various network protocal
+dd
+Convert and copy files
+fdisk
+Manipulate the disk partition table
+parted
+For creating and manipulating partition tables
+blkid
+command-line utility to locate/print block device attributes.
+mkfs
+Build a linux file system
+fsck
+Tool for checking the consistency of a file system
+whois
+Clent for the whois directory service
+nc
+Command line network utility
+umask
+Set file mode creation mask
+chmod
+change the access permissions of file system objects.
+chown
+Change file and ownership
+chroot
+Rum command or interactive shell with a special root directory
+vi
+Text editor
+tac
+Output file contents in reverse
+dmesg
+Prints the message buffer of the kernel ring
+journalctl
+Query the systemd journal
+killall
+Sends a killl signal to all instances of a process by name
+sleep
+Suspends program execution for a specified time
+Wait 
+suspend script execution until all jobs running in the background have been terminated.
+nohup
+Run commands in the background
+screen
+Hold session open on a remote server
+tmux
+A terminal multiplexer
+chpassword
+Allows users to change the password for various user accounts
+mount/umount
+Provides access to an entire filesystem in one directory
+systemctl
+Central management tool for controlling the init system
+clear
+Clears the screen of the terminal
+env
+Run a command in a modified environment
+cheat
+allows you to create and view interactive cheatsheets on the command line.”
+tldr
+Collaborative cheatsheets for console commands.
+btop
+C++ version and continuation of bashtop and bpytop
+nload
+A super simple, command-line network interface monitoring tool
+sar
+collects, reports, and saves system activity information, including CPU, memory, disk, and network usage.
+
+
+
+
+Review and Practice the case scenarios:
+
+
+
+
+
+
+

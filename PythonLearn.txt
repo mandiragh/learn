@@ -1,0 +1,381 @@
+Python Programming: 
+A sequence of instructions that designate how to execute a computation, taking a task and executing after writing in a programming language. 
+
+Source Code , process in the software in the form of Zero’s and One’s
+
+Good problem solving skills
+Well- developed abstract thinking
+Mechanistic thinking
+Style of coding 
+
+Python: 
+Practical application, powerful computation tool
+Open source, general purpose and high level 
+Financial institution and tech 
+BIG data  
+
+Easy to learn, clear and intuitive syntax
+
+Python:
+Jupyter: notebook app, edit code through web browser, 
+Client: web browser
+
+Write a code or command on Jupyter:
+Example: x = [1, 2, 3, 4] 
+	     X
+Output :- Ctrl + Enter or Shift + Enter (creates new coding row/Cells )
+To copy : Select the row/Code Cells with arrow button and Press C
+To Paste: Select the row with arrow button and Press V
+To Add the Row above Press A
+To Add the Row below Press B
+To erase the row Press D + D
+
+Marked down Cells: It is a cell that contains strictly documentation text not executed as a code. It also contains the message to leave the reader  of the file. 
+Press M for markdown and write the text to document
+Press Y to go back to coding 
+
+Python 2 vs Python 3 (Python Variables):
+Print vs print()
+Integer division
+
+ 
+
+Start Coding:
+Type Command or program: for example cmd- x = 5 where, = means assign or bind to 
+To get the output/ to execute  press shift and enter 
+Python is case sensitive so make sure you use right case, y or Y
+To assign two different variables ; x,y = (1,2)
+
+Numbers and Boolean values:
+Integers
+Floating points: Float: real numbers
+: how to verify the integer by assigning a variable without the decimal number - type (x1), result: int
+: how to verify the integer by assigning value instead of variable: type(values like 1,2,3)
+Boolean Values: not all values are numeric values, its like asking questions; 
+True or False value ; 0 or 1 ; on or off 
+
+Strings: Text values composed of a sequence of characters, convert a character y into a string. 
+Print : For Example- Set a value of character: y = 10, print (str(y) + “Dollars”) ; 10 Dollars
+Python can guess the data being entered. 
+Print (‘red ‘ + ‘car’) ; red car
+
+Fundamental of Syntax:
+Arithmetic operators: 5** 3= 125, 16% 3= 1
+Double equity sign: y = 5**3, y ==125 means is y equal to 125? Asking a real value which=says True
+Reassign values: python reassign its values to the objects. So, the last command is valid and older commands are overwritten
+Add Comments: Insert a # sign before writing a command. 
+Line Continuation: put \ before changing line of command
+Indexing Elements: Square brackets right after the word or the string of characters, and add a number indicating the position of interest. Eg: “Friday” [3]= ‘d’ - letters counted from 0 not 1- 0,1,2,3,4,5
+Structure the code:Indentation- use tab key to indent or write def before codes to use indent
+
+Python Comparison Operators: 
+
+Two equals means: asking if the value is true or false
+An exclamation marks and equal sign with two sides we are comparing will obtain the true or false statement which is != mean not equal to 
+Greater than or smaller than to verify the value > , <
+Greater than or equal to to verify the value >= , <= 
+
+
+
+
+Python’s logical and Identity Operators:
+NOT: not False- True;  
+AND: True and True- True; True and False- False; False and False- False;
+OR:  False or False- False, True or True- True; True or False- True; 
+
+Order of Operators: 
+True and not True- False
+False or not True and True- False
+True and not True or True- True 
+
+Conditionals:
+ # Getting to know the IF statement: 
+If and type Condition : 
+	Print “case 1” and click enter shift
+ eg: x = 1 
+If x > 3:
+	Print (“case 1”)
+
+# Add an Else Statement:
+If condition:  
+	Conditional code:
+else : 
+Else code
+
+ eg: x = 1 
+If x > 3:
+	Print (“case 1”)  Block of Code/ Command #1
+Else: 
+	Print (“Case 2”) Block of Code/ Command #2
+
+# Else If, for Brief - ELIF
+def compare_to_five(y):
+    if y >5:
+        return "Greater"
+    elif y < 5:
+        return "less"
+    else: 
+        return "Equal" - result less
+
+Define a Function in Python:
+def is a keyword - indicates this jupyter will auto change the font color to green. 
+Line 1: def function_name (parameters) : example - def simple(parameters)
+	Print (“My First Function”)
+Line 2: simple() - result My First Function 
+Def plus_ten (a):
+	Return a +10
+Addition of Ten or Plus_ten (2) - result 12 so, it is correct to say we provide an argument, not a parameter.
+ we call/read the function: plus ten with an argument of two. 
+Parameter comes with function
+Return regard to the value of Y , plays a connection between the second and third step. 
+Can be used only once in a function.
+Does not visualize the output, It specifies what a certain function is supposed to give back
+
+# How to use function within the function: 
+def wage(w_hours):
+    return w_hours * 25
+def with_bonus (w_hours):
+    return wage(w_hours) + 50
+run
+wage(8), with_bonus(8)
+Run - result ; 200 , 250
+
+Combining Conditional Statements and Functions:
+def substract_bc(a,b,c):
+    result = a - b*c
+    print ('parameter a equals', a)
+    print ('parameter b equals', b)
+    print ('parameter c equals', c) 
+    return result
+Print (substract_bc(10,3,2))) 
+
+Notable Built-In Functions in Python:
+int()- integer value
+float()- float value
+str()- string text
+max()- maximum value
+min()- minimum value
+abs(x)- assign value for x and get absolute value of x
+sum(list_1)- assign values for list_1, get sum of the given list_
+round()- round decimal number to whole number or nearest whole number assigned
+Eg: (x,y) returns the float of its argument (x), round to a specified number of digits (y) after the decimal points.
+round(3.5555, 2) - round 3.5555 to two digid=st after the decimal points= 3.56
+round(3.2) = 3.0 
+2^ 10 is written as  2 ** 10 = 1024 
+Pow (x,y) ; (2, 10) = 1024
+Len (‘Mathematics’) = number of characters in the word. 
+Further Learn- 
+Introduction to List: 
+a list is a type of sequence of data points such as integer, float, strings
+
+Pets = [‘Lucky’, ‘Love’, ‘Pretty’,’show’]
+Pets 
+
+Access the list by indexing the value 1 means extract the 2nd of the elements in this list variable
+Method to use in Python
+Dot operator : Allows to call in or invoke a certain method
+Append :
+Extend :
+Len: Count the numbers of digit or argument
+
+Syntax for invoking a method in Python: 
+Name of the object, dot operator, name of the method, parentheses
+For ex: pets.append()
+
+
+List Slicing: 
+Extracting the name or elements from given list
+For ex: pets[1:3] i.e - to extract elements in between
+Pets[:2]- First Two
+Pets [4:]/ [-2]- Last two 
+Indexing : Position of the elements 
+Pets index(‘Pretty’)
+Tuples: 
+Are a type of data sequences, immutable, change or modified, delete or append
+Tuple elements are put in parentheses not in brackets.
+Default sequence
+Functions can provide tuples as return values
+def square_info(x):
+    A= x**2
+    P= 4 *x
+    print ("Area and Perimeter:")
+    return A,P
+square_info(6)
+Result: Area and Perimeter
+(36,24)
+.split(‘,’) Method = (number_of_years, period) = "27,13".split(',')
+print(number_of_years)
+print(period)
+.get() Method = 
+20/10/2022- 22/10/2022
+
+Loops: 
+Iteration (Pass of the loop) is the ability to execute a certain code repeatedly.
+For Loop- 
+even = [0,2,4,6,8,10,12,14,16,18,20]
+for n in even:
+    print (n,end = " ") i.e. print n set with space in between separated by “ “
+0 2 4 6 8 10 12 14 16 18 20
+
+
+While Loop- 
+
+x = 0 
+while x<= 20:
+    print (x, end= "  ")
+    x = x + 2 or x=+ 2  i.e. increment  (c + v) 
+0 2 4 6 8 10 12 14 16 18 20 
+
+
+Using Range to Create List: 
+Range (start, stop, step) creates a sequence of integers
+Start value = First number in the list
+Stop value = greater than the last value , last value +1  (Important)
+Step Value = the distance between two consecutive values
+
+range(10) 
+List (range(10)) 
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+
+
+Use Conditional Statements and Loops Tog
+
+for n in range(12):
+    print (2 **n, end= " ")
+1,2,4,8,16,32,........
+
+for x in range(20):
+    if x % 2 == 0:
+        print (x, end = " ")
+    else:
+        print ("odd", end = " ")
+0 odd 2 odd 4 odd ……
+
+
+
+Iterating over Dictionaries: 
+
+prices = {
+    "box_of_spaghetti" :4,
+    "lasagna" :5,
+    "hamburger" :2
+}
+quantity = {
+    "box_of_spaghetti" :6,
+    "lasagna" :10,
+    "hamburger" :0
+}
+money_spent = 0
+for i in prices:
+    money_spent = money_spent + (prices[i]* quantity[i])
+    
+print (money_spent)
+74
+
+
+Object Oriented Programming OOP: Language Java, php, Python, C++
+Logical Objects: Float, Strings, Integers, List
+Objects: Allow us to model real world concepts
+Objects: Data + Manipulation Operations
+
+Concepts of Classes: Defines the rules for creating that objects Python “list class”
+Objects (Instance) - [15.9, 12.4, 64.0]
+Add attributes to it (properties)- type of data : floats 
+Method: .extend() , . index() 
+Function: can have parameters, exists on its own , [Python Syntax- function()]
+Method: it is a special function, the object is one of its parameters, belongs to a certain class
+[Python syntax: object.method() ]
+
+
+Module and Packages:
+Module: pre-written code with function and classes
+Package/ Library: collection or directory of related python modules 
+Working with Tools: Standard Library
+Importing Module: 
+
+Importing Math Module:  sqrt() - calculates the square root of an argument 
+Import math 4 ways: 
+Name of the module . name of the function of interest (argument)
+math.sqrt(16) - 4.0 
+From math import sqrt 
+Sqrt (16) - 4.0
+From math import sqrt as s
+s(16) - 4.0
+Import math as m
+m.sqrt(16) - 4.0
+From math import * i.e.  (Import all from math)
+sqrt(16) - 4.0 
+
+
+Integration/ Software Integration: 
+
+Data, Server, Clients, requests and response: 
+Software: API
+Servers: Data - information stored in the form of symbols, 1s and 0s, other digits, letters and special characters, etc 
+Can be collected, measured, analyzed, processed further 
+Can be found in database, database are stored in database servers
+Server: Web browser, Client: Browser, Request: pull information, response: show/ extract information
+Data Connectivity: 
+Regards the ability to connect clients to servers, securing the swift and voluminous transfer of information between them
+Use of APIs Application Programming interfaces: - connect information from multiple servers simultaneously, all these data are delivered to clients 
+A contract allowing software to share data with each other 
+Lets devices and software applications communicate in real time. 
+Interface / : connectivity, Endpoint of process; using inputs, a device is capable of executing certain operations to produce
+Data asset: data that is expected to have some value in the future
+Application: a program designed to perform a specific set of operations for the end user, be it a person or another application
+Programming: refers to the function the app performs
+Regards the process of converting inputs into outputs
+
+
+
+
+
+
+
+
+
+
+
+
+Text File formats: .xml ,
+ .csv,- exchange information
+ .json,- retrieve data and information
+ .py- python  
+
+Integration : a system composed of different software products, various programming languages, or other pieces of software which can communicate through other APIs .
+A situation where multiple software products can be set up to work as one tool. 
+Driver: drive software within two products 
+
+Exercise for Practice:
+Absenteeism 
+Problem: From point view of Incharge
+Measure of Absenteeism?
+ What could impact a person staying away from work during working days/hours? 
+Data:  
+Primary 
+Secondary
+
+
+
+
+
+
+Steps:
+
+Data Processing: Preprocessing of data to analyze and retrieve data
+Programming Terminology: Features, Attributes, Inputs:; Variable 
+Analysis:  Regression Analysis
+Dropping the values we don't need 
+df.drop([‘id’], axis = 0)
+Copy the newly created data set 
+Exercise: Drop Age from the table
+Df_no_age = df.drop ([‘Age’], axis = 1) 
+Concatenation in Python: Combine the features/objects that are newly created 
+pd.concat() 
+
+
+
+
+

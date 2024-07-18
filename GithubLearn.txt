@@ -155,9 +155,57 @@ git rm -r --cached .
 
 RENAME , MOVE , AND DELETE FILES 
 - git mv oldfilename to newfilename 
-- git 
+
+- git diff '17d401d' ( shows the difference between renwmed or duplicated files)
+
+- git log --oneline (helps to see the current changes istead of all)
+
+- git lens (to find the difference)
+
+use editor to amend and rebase 
+CHANGING HISTORY:
+- git commit --amend (to create the changes)
+- git log --online to check the changes 
+
+**** git reset --hard 17d401d (means delete things on the commit)- Do not do it ****
+
+REBASING: changing the commit history 
+git rebase <branch>/<commit>
+- git rebase --interactive <branch>/<commit>
+- git rebase -i HEAD~# (use this)
+- git rebase -i --root
+
+###BRANCHES: ability to edit and change without worrying about the original
+git branch # * main (does not have branch)
+we have to copy of an existing branch 
+- git switch -c NAME
+- git checkout -b NAME 
+
+MERGING: merge the changes from the branch to main branch
+- git checkout main (going from branch to main)
+- git branch 'xxx'
+- git merge 'xxx' (merging the chnages from fix to main)
 
 
+DELETE the BRANCH
+git branch --delete NAME
+git branch -d NAME
+git brnach -D NAME
+
+GIT Flow
+- Feature/fix branch
+- Make Changes
+- Merge to master
+- Delete old branch 
+
+MERGE Conflict:
+- 
+
+GIT stash and clen:
+**STACHING CODE: to temporarly keep them in storage folder
+- git stash list (what is stored)
+- git stash apply (apply stash set of changes)
+- git stash pop (remove stash from list)
 
 
 
