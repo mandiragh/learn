@@ -147,6 +147,18 @@ $touch .gitignore
 - notes/
 - **/*-todo.md
 
+CREATING Global Ignore Files:
+git config --global core.excludesfile [file]
+
+ClEARING the cache: (deletes the files that are cached recursivley)
+git rm -r --cached .
+
+RENAME , MOVE , AND DELETE FILES 
+- git mv oldfilename to newfilename 
+- git 
+
+
+
 
 
 
