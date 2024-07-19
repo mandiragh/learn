@@ -201,12 +201,50 @@ GIT Flow
 MERGE Conflict:
 - 
 
-GIT stash and clen:
+GIT stash and clean:
 **STACHING CODE: to temporarly keep them in storage folder
 - git stash list (what is stored)
 - git stash apply (apply stash set of changes)
 - git stash pop (remove stash from list)
 
+********
+- git clean -n #dry run
+- git clean -d #directories
+- git clean -f #force
+
+GIT PUSH:
+git remote add NAME URL
+- git remote remove NAME
+- git rename OLDNAME NEWNAME 
+- git remote -v 
+
+- git push -u 
+- git push -all
+- git branch -set-upstream-to <origin/remote-branch>( connect into remote repo)
+
+#PULL REQUESTS AND MERGE PULL REQUESTS
+- from website use the pull repo button
+
+# Learning Markdown in Github for README files
+- Creating headlines with SYNTAX: Headings
+# for 1 
+## for 2
+
+*Italic* or _Italic_
+**Bold** or __Bold__
+~~Strikethrough~~
+
+##  Unordered  Lists 
+- Item 1
+- Item 2
+  - Subitem 1
+  - Subitem 2
+
+  For Inline codes:
+  `inline code` (it shows the letter leads to code in backend)
+
+# Addition of FOOTNOTES:
+- 
 
 
 
