@@ -201,21 +201,24 @@ GIT Flow
 MERGE Conflict:
 - 
 
-GIT stash and clen:
+GIT stash and clean:
 **STACHING CODE: to temporarly keep them in storage folder
 - git stash list (what is stored)
 - git stash apply (apply stash set of changes)
 - git stash pop (remove stash from list)
 
-# Repo Essentials for github 
 
 
 #Organizing projects:
 - 
 
 - git fetch -a (to have all the updates done on github remote repo to local)
-- 
+- g + p (to go to pull request in github)
 
+
+- Github Gist to save github codes and save 
+- github wikis for quick documentation
+- Github pages
 
 
 
